@@ -9,20 +9,9 @@
 
 <body>
     <input type="text" id="firstNameInput">
-    <button onclick="greet()">Wyślij</button>
-    <script>
-        function greet() {
-            //Tworzę zmienną o nazwie firstName
-            let firstName = "";
-            //przeczytaj imię z pola edycyjnego i zapisz je do zmiennej
-            firstName = document.getElementById("firstNameInput").value;
-            //przygotowujemy tekst powitania
-            let greeting = "Witaj " + firstName + "!";
-            //wyświetlamy tekst powiadomienia
-            window.alert(greeting);
-        }
-
-    </script>
+    <!--<button onclick="greet()">Wyślij</button>-->
+    <button id="sendButton">Wyślij</button>
+    <script src="script.js"></script>
 </body>
 
 </html>
