@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+div#container {
+    width: 60vw;
+    margin: 20vh auto;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+div#container > div {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+
+}
+input[type=number] {
+    width: 100%;
+}
+
+div#result {
+    width: 60vw;
+    margin: 20vh auto;
+    background-color: #eee;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: none;
+}

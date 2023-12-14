@@ -16,3 +16,6 @@ do {
     document.write("Rzut kostką: " + dice + "<br>");
     //powtarzamy dopóki nie wyrzucimy "6"
 } while(dice != 6)
+
+document.write("<br>");
+

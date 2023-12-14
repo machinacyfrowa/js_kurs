@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- celem zadania jest stworzenie uproszczonego kalkulatora, 
+        który będzie potrafił wykonywac podstawowe operacje arytmetyczne 
+        na dwóch podanych liczbach-->
+
+    <div id="container">
+        <div id="left">
+            <label for="a">Liczba 1:</label>
+            <input type="number" id="a">
+        </div>
+        <div id="center">
+            <input type="radio" name="operand" id="o1">Dodawanie
+            <br>
+            <input type="radio" name="operand" id="o2">Odejmowanie
+            <br>
+            <input type="radio" name="operand" id="o3">Mnożenie
+            <br>
+            <input type="radio" name="operand" id="o4">Dzielenie
+            <br>
+            <button id="calc">Oblicz</button>
+        </div>
+        <div id="right">
+            <label for="b">Liczba 2:</label>
+            <input type="number" id="b">
+        </div>
+        <!-- div#nazwa[enter] lub div.nazwa[enter]-->
+        <!-- trik na tabelki table>tr*5>td*3 -->
+    </div>
+    <div id="result">
+        
+    </div>
+</body>
+
+</html>
