@@ -1,7 +1,9 @@
 function calc() {
     //pobieramy wartości z pól edycyjnych
     let a = document.getElementById('a').value;
+    a = parseFloat(a);
     let b = document.getElementById('b').value;
+    b = parseFloat(b);
 
     //sprawdzamy jaką operację mamy wykonać
     let operand = '';
