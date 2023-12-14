@@ -5,6 +5,8 @@ for(let i=0; i<=10; i++) {
     document.write("Licznik wynosi: " + i + "<br>");
 }
 
+document.write("<br>");
+
 //do...while zawsze wykona się chociaż raz, 
 //dopiero potem sprawdza warunek
 do {
