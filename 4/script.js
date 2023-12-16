@@ -10,3 +10,12 @@ function validate() {
         li.innerHTML = "Hasło nie posiada co najmniej 8 znaków";
     }
 }
+
+//funkcja anonimowa (funkcja strzałkowa) służy do wstawiania 
+//kodu w miejscu, które normalnie wymaga podania nazwy
+//funkcji (metody)
+//klasyczna metoda z funkcją addEvent patrz wcześniejsze projekty
+window.addEventListener("load", () => {
+    document.getElementById("passwordInput")
+                .addEventListener("input", validate);
+})
