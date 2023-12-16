@@ -34,7 +34,22 @@ function validate() {
 
     //tu będzie logika wyszukiwania właściwych znaków...
 
-
+    //iterujemy przez całe hasło porównując każdy znak
+    //z znakami wzorcowymi
+    console.log("Rozpoczynam pętle...");
+    for(let i = 0; i < password.length; i++) {
+        console.log("Licznik (i) wynosi: " + i);
+        console.log("i-ta litera hasła to: " + password[i]);
+        //sprawdz w tablicy chars czy istnieje 
+        //i-ty znak z hasła (password)
+        console.log("Szukam w małych literach");
+        if(chars.indexOf(password[i]) > -1) {
+            //znalazłem we wzorcu
+            console.log("Znak " + password[i] + " znaleziono!");
+            charsFound = true;
+        }
+    }   
+    console.log("Koniec pętli!");
 
 
 
@@ -48,8 +63,8 @@ function validate() {
         charsLi.className = "green";
     } else {
         //hasło nie zawiera małych liter
-        charsLi.innerHTML = "Hasło nie zawiera małych liter"
-        charsLi.className = "red"
+        charsLi.innerHTML = "Hasło nie zawiera małych liter";
+        charsLi.className = "red";
     }
 }
 
