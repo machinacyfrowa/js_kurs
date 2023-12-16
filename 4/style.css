@@ -12,3 +12,9 @@ input#passwordInput {
     width: 100%;
     text-align: center;
 }
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}

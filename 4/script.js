@@ -1,15 +1,55 @@
 function validate() {
+    //pobierz hasło z pola edycyjnego
     let password = document.getElementById("passwordInput").value;
+    //sprawdz długosc hasła
     if(password.length >= 8) {
         //hasło spełnia wymóg długości
+        //zapisz cały element DOM do zmiennej
         let li = document.getElementById("passwordLength");
+        //zmień zawartość HTML elementu <li>
         li.innerHTML = "Hasło posiada co najmniej 8 znaków";
-        li.style.color = "green";
+        //zmień klasę elementu <li>
+        li.className = "green";
     } else {
         //hasło nie spełnia wymogu długości
         let li = document.getElementById("passwordLength");
         li.innerHTML = "Hasło nie posiada co najmniej 8 znaków";
-        li.style.color = "red";
+        li.className = "red";
+    }
+    //przygotuj wzorce dla małych, wielkich liter znaków     
+    //specjalnych i cyfr
+    let chars = "abcdefghijklmnopqrstuwxyz";
+    let capitalChars = "ABCDEFGHIJKLMNOPQRSTUWXYZ";
+    let digits = "0123456789";
+    let specials = "!@#$%^&*(){}[]:;<>,.?/";
+
+    //znaleziono małą literę
+    let charsFound = false;
+    //znaleziono wielką literę
+    let capitalCharsFound = false;
+    //znaleziono cyfrę
+    let digitsFound = false;
+    //znaleziono znak specjalny
+    let specialsFound = false;
+
+    //tu będzie logika wyszukiwania właściwych znaków...
+
+
+
+
+
+
+    //wyświetlanie wyników
+    //małe litery
+    let charsLi = document.getElementById("chars");
+    if(charsFound) {
+        //jeżeli znaleziono małe litery
+        charsLi.innerHTML = "Hasło zawiera małe litery";
+        charsLi.className = "green";
+    } else {
+        //hasło nie zawiera małych liter
+        charsLi.innerHTML = "Hasło nie zawiera małych liter"
+        charsLi.className = "red"
     }
 }
 
