@@ -48,6 +48,11 @@ function validate() {
             console.log("Znak " + password[i] + " znaleziono!");
             charsFound = true;
         }
+        if(capitalChars.indexOf(password[i]) > -1) {
+            //znalazłem we wzorcu
+            console.log("Znak " + password[i] + " znaleziono!");
+            capitalCharsFound = true;
+        }
     }   
     console.log("Koniec pętli!");
 
@@ -64,6 +69,16 @@ function validate() {
     } else {
         //hasło nie zawiera małych liter
         charsLi.innerHTML = "Hasło nie zawiera małych liter";
+        charsLi.className = "red";
+    }
+    charsLi = document.getElementById("capitalChars");
+    if(capitalCharsFound) {
+        //jeżeli znaleziono małe litery
+        charsLi.innerHTML = "Hasło zawiera wielkie litery";
+        charsLi.className = "green";
+    } else {
+        //hasło nie zawiera małych liter
+        charsLi.innerHTML = "Hasło nie zawiera wielkich liter";
         charsLi.className = "red";
     }
 }
